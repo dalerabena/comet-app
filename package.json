@@ -15,7 +15,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://dalerabena.github.io/pwa-react-app",
+  "homepage": "https://dalerabena.github.io/frozen-app",
   "devDependencies": {
     "gh-pages": "^1.1.0"
   }
