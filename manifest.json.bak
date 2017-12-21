@@ -38,6 +38,11 @@
       "type": "image/png"
     },
     {
+      "src": "icons/icon-192x192.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
       "src": "icons/icon-256x256.png",
       "sizes": "256x256",
       "type": "image/png"
@@ -52,7 +57,4 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#009688",
-  "permissions": [
-    "https://www.nasa.gov/"
-  ]
 }
