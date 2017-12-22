@@ -2,9 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 import Drawer from 'material-ui/Drawer';
-import Button from 'material-ui/Button';
-import List from 'material-ui/List';
-import Divider from 'material-ui/Divider';
 import MenuList from './menuList';
 import IconButton from 'material-ui/IconButton';
 import MenuIcon from 'material-ui-icons/Menu';
@@ -32,22 +29,6 @@ class TemporaryDrawer extends React.Component {
   render() {
     const { classes } = this.props;
 
-    const sideList = (
-      <div className={classes.list}>
-        <List>{MenuList}</List>
-        <Divider />
-        <List>{MenuList}</List>
-      </div>
-    );
-
-    const fullList = (
-      <div className={classes.listFull}>
-        <List>{MenuList}</List>
-        <Divider />
-        <List>{MenuList}</List>
-      </div>
-    );
-
     const menuButton = {
       marginLeft: -10,
       marginRight: 10
@@ -55,7 +36,7 @@ class TemporaryDrawer extends React.Component {
 
     return (
       <div>
-        <IconButton style={menuButton} color="contrast" aria-label="Menu" onClick={this.toggleDrawer('left', true)}>
+        <IconButton color="contrast" aria-label="Menu" onClick={this.toggleDrawer('left', true)}>
             <MenuIcon />
         </IconButton>
         <Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}>

@@ -1,5 +1,6 @@
 {
-    "name": "Comet App",
+    "short_name": "Comet App",
+    "name": "Create React App Sample",
     "icons": [
         {
             "src": "/icons/android-chrome-192x192.png",
@@ -12,7 +13,8 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ee6d21",
-    "background_color": "#ee6d21",
+    "start_url": "./index.html",
+    "theme_color": "#3f51b1",
+    "background_color": "#3f51b1",    
     "display": "standalone"
 }
